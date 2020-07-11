@@ -19,11 +19,11 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    ```sh
    java -version
    find /usr/lib/jvm/java-1.8* | head -n 3
-   JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-<Java version which seen in the above output>
-   export JAVA_HOME
-   PATH=$PATH:$JAVA_HOME
+   To get java version.
     # To set it permanently update your .bash_profile
    vi ~/.bash_profile
+   $JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-<Java version which seen in the above output>
+   PATH=$PATH:$JAVA_HOME
    ```
    _The output should be something like this,_
     ```sh
@@ -34,6 +34,9 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    ```
 
 ## Install Jenkins
+You can either follow the steps from the below link
+https://www.jenkins.io/doc/book/installing/
+or
  You can install jenkins using the rpm or by setting up the repo. We will set up the repo so that we can update it easily in the future.
 1. Get the latest version of jenkins from https://pkg.jenkins.io/redhat-stable/ and install
    ```sh
